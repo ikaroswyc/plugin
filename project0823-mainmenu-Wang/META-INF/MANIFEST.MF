@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Project0206-examplemenu-Wang
+Bundle-SymbolicName: project0213-helloplugin-Wang;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.e4.ui.model.workbench;bundle-version="1.2.0.v20160229-1459",
+ org.eclipse.e4.core.di,
+ org.eclipse.swt;bundle-version="3.105.3",
+ org.eclipse.jface;bundle-version="3.12.2"
+Import-Package: javax.inject;version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
