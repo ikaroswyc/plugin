@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_IKRWEAIgEeisjc4o4t1KAg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_NlWesAIgEeisjc4o4t1KAg" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_fGkSsAIgEeisjc4o4t1KAg" elementId="project0206-examplemenu-wang.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_tClhoAIgEeisjc4o4t1KAg" elementId="project0206-examplemenu-wang.menu.examplemenu" label="Hello Plug-in">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_4BzBMAIgEeisjc4o4t1KAg" elementId="project0206-examplemenu-wang.handledmenuitem.examplemenuitem" label="Show Hello" command="_-br-IA0mEeicoLaVcGzajw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SMAtkKdwEei1cdWl9wKtAA" elementId="project0823-mainmenu-wang.handledmenuitem.mymenuitemtwo" label="Read File and Show Hello" command="_se08wKsjEeiYOZJnP0H_Aw"/>
+      </children>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_5M6MIA0mEeicoLaVcGzajw" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_-br-IA0mEeicoLaVcGzajw" elementId="project0206-examplemenu-wang.command.showhelloworld" commandName="Show Hello"/>
+    <elements xsi:type="commands:Command" xmi:id="_se08wKsjEeiYOZJnP0H_Aw" elementId="project0828-message-wang.command.readfile" commandName="Read File"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_CG_LMA0nEeicoLaVcGzajw" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_G-yAkA0nEeicoLaVcGzajw" elementId="project0206-examplemenu-wang.handler.0" contributionURI="bundleclass://project0213-helloplugin-Wang/ShowHelloWorldHandler" command="_-br-IA0mEeicoLaVcGzajw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_vuogoKsjEeiYOZJnP0H_Aw" elementId="project0828-message-wang.handler.0" contributionURI="bundleclass://project0213-helloplugin-Wang/ReadFileShowHelloHandler" command="_se08wKsjEeiYOZJnP0H_Aw"/>
+  </fragments>
+</fragment:ModelFragments>
