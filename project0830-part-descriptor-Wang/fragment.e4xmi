@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_IDwk4K33Eeivg9Ujpers2w">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Jky50K33Eeivg9Ujpers2w" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_bM4K0K33Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.command.showhellopartdescriptor" commandName="Show Hello Part Descriptor"/>
+    <elements xsi:type="commands:Command" xmi:id="_0O42wK33Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.command.clearpartdescriptor" commandName="Clear Part Descriptor"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ooCIYK33Eeivg9Ujpers2w" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_ruFTUK33Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.partdescriptor.viewpartdescriptor" label="View Part Descriptor" iconURI="platform:/plugin/project0830-part-descriptor-Wang/icons/sample.png" contributionURI="bundleclass://project0830-part-descriptor-Wang/viewer.SimpleView">
+      <handlers xmi:id="_iu1q8K34Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.handler.0" contributionURI="bundleclass://project0830-part-descriptor-Wang/handler.ShowHelloPartDescriptorHandler" command="_bM4K0K33Eeivg9Ujpers2w"/>
+      <handlers xmi:id="_jh3qYK34Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.handler.1" contributionURI="bundleclass://project0830-part-descriptor-Wang/handler.ClearPartDescriptorHandler" command="_0O42wK33Eeivg9Ujpers2w"/>
+      <menus xsi:type="menu:PopupMenu" xmi:id="_WBiR4K34Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_XpJI4K34Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.handledmenuitem.clearpartdescriptor" label="Clear Part Descriptor" command="_0O42wK33Eeivg9Ujpers2w">
+          <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_g65oIK34Eeivg9Ujpers2w"/>
+        </children>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_zt9CAK35Eeivg9Ujpers2w" elementId="project0830-part-descriptor-wang.handledmenuitem.showhellopartdescriptor" label="Show Hello Part Descriptor" command="_bM4K0K33Eeivg9Ujpers2w"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
