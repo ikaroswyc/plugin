@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_YrvxQLIdEeiqJr0xk5k8AQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Zek8YLIdEeiqJr0xk5k8AQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_ld_7wLIdEeiqJr0xk5k8AQ" elementId="project0906-tableview-wang.partdescriptor.simpletableview" label="Simple Table View" iconURI="platform:/plugin/project0906-tableview-Wang/icons/sample.png" contributionURI="bundleclass://project0906-tableview-Wang/view.MyTableViewerPartDescriptor"/>
+  </fragments>
+</fragment:ModelFragments>
