@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_8HvPoL0cEeiefMLGKd6Agw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_8y33UL0cEeiefMLGKd6Agw" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_FRDkkL0dEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.partdescriptor.simpletableaddingdeletingyuchenwang" label="simple Table Adding Deleting Yuchen Wang" iconURI="platform:/plugin/project0920-add-delete-Wang/icons/sample.png" contributionURI="bundleclass://project0920-add-delete-Wang/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_T0fcAL0hEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.popupmenu.mypopupmenu" label="my popup menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Y1eCkL0hEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.handledmenuitem.add" label="Add" command="_U8_5AL0dEeiefMLGKd6Agw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ZMWRgL0hEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.handledmenuitem.delete" label="Delete" command="_VcRO8L0dEeiefMLGKd6Agw"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_9OgDYL0cEeiefMLGKd6Agw" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_U8_5AL0dEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.command.addpersoncommand" commandName="Add Person Command"/>
+    <elements xsi:type="commands:Command" xmi:id="_VcRO8L0dEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.command.deletepersoncommand" commandName="Delete Person Command"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_9if9cL0cEeiefMLGKd6Agw" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_gtj9AL0dEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.handler.0" contributionURI="bundleclass://project0920-add-delete-Wang/handler.AddPersonHandler" command="_U8_5AL0dEeiefMLGKd6Agw"/>
+    <elements xsi:type="commands:Handler" xmi:id="_hj8ycL0dEeiefMLGKd6Agw" elementId="project0920-add-delete-wang.handler.1" contributionURI="bundleclass://project0920-add-delete-Wang/handler.DelPersonHandler" command="_VcRO8L0dEeiefMLGKd6Agw"/>
+  </fragments>
+</fragment:ModelFragments>
