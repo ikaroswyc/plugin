@@ -18,9 +18,7 @@ public class MyFileSaveVisitor extends CarPartVisitor{
 	@Override
 	public void visit(Wheel part) {
 		// TODO Auto-generated method stub]
-		listContents.add(part.getName());
-		listContents.add(part.getModelNumberWheel());
-		listContents.add(part.getModelYearWheel());
+		listContents.add(part.getName() + "," + part.getModelNumberWheel() + "," + part.getModelYearWheel());
 		try {
 			UtilFile.saveFile(filePath, listContents);
 		} catch (IOException e) {
@@ -32,9 +30,7 @@ public class MyFileSaveVisitor extends CarPartVisitor{
 	@Override
 	public void visit(Engine part) {
 		// TODO Auto-generated method stub
-		listContents.add(part.getName());
-		listContents.add(part.getModelNumberEngine());
-		listContents.add(part.getModelYearEngine());
+		listContents.add(part.getName()+ "," + part.getModelNumberEngine()+ "," + part.getModelYearEngine());
 		try {
 			UtilFile.saveFile(filePath, listContents);
 		} catch (IOException e) {
@@ -46,9 +42,7 @@ public class MyFileSaveVisitor extends CarPartVisitor{
 	@Override
 	public void visit(Body part) {
 		// TODO Auto-generated method stub
-		listContents.add(part.getName());
-		listContents.add(part.getModelNumberBody());
-		listContents.add(part.getModelYearBody());
+		listContents.add(part.getName() + "," + part.getModelNumberBody() + "," + part.getModelYearBody());
 		try {
 			UtilFile.saveFile(filePath, listContents);
 		} catch (IOException e) {
@@ -61,9 +55,7 @@ public class MyFileSaveVisitor extends CarPartVisitor{
 	@Override
 	public void visit(Brake part) {
 		// TODO Auto-generated method stub
-		listContents.add(part.getName());
-		listContents.add(part.getModelNumberBrake());
-		listContents.add(part.getModelYearBrake());
+		listContents.add(part.getName() + "," + part.getModelNumberBrake() + "," + part.getModelYearBrake());
 		try {
 			UtilFile.saveFile(filePath, listContents);
 		} catch (IOException e) {
