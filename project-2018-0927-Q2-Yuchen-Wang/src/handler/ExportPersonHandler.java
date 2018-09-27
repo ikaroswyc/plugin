@@ -26,7 +26,7 @@ public class ExportPersonHandler {
 			listContents.add(iLine);
 		}
 		//String workDir = System.getProperty("user.dir");
-		String filePath = "C:\\Users\\Yuchen\\workspace-neon3\\project-2018-0927-Q2-Yuchen-Wang\\output-q2-0927-Yuchen-Wang.csv";
+		String filePath = " C:/Users/Yuchen/git/plugin/project-2018-0927-Q2-Yuchen-Wang/inputdata-q2-0927.txt";
 		
 		try {
 			UtilFile.saveFile(filePath, listContents);
