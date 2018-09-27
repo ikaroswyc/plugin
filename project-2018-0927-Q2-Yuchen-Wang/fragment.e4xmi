@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gkw00MKYEei44o2rUuH4Hg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_jR37UMKYEei44o2rUuH4Hg" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application" positionInList="">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_EwuQsMKZEei44o2rUuH4Hg" elementId="project-2018-0927-q2-yuchen-wang.partdescriptor.simpletableview20180927q2yuchenwang" label="Simple Table View 2018 0927 Q2 Yuchen Wang" iconURI="platform:/plugin/project-2018-0927-Q2-Yuchen-Wang/icons/sample.png" contributionURI="bundleclass://project-2018-0927-Q2-Yuchen-Wang/view.MyTableViewer"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_BK5ZgMKZEei44o2rUuH4Hg" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_z0MosMKZEei44o2rUuH4Hg" elementId="project-2018-0927-q2-yuchen-wang.command.exportcommand" commandName="ExportCommand"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_BjZZEMKZEei44o2rUuH4Hg" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_4fprMMKZEei44o2rUuH4Hg" elementId="project-2018-0927-q2-yuchen-wang.handler.0" contributionURI="bundleclass://project-2018-0927-Q2-Yuchen-Wang/handler.ExportPersonHandler" command="_z0MosMKZEei44o2rUuH4Hg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_cgeDgMKZEei44o2rUuH4Hg" featurename="menuContributions" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="menu:MenuContribution" xmi:id="_fMEHEMKZEei44o2rUuH4Hg" elementId="project-2018-0927-q2-yuchen-wang.menucontribution.0" positionInParent="after=window" parentId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_nfsKIMKZEei44o2rUuH4Hg" elementId="project-2018-0927-q2-yuchen-wang.menu.2018-0927-q2-yuchen-wang" label="2018-0927-Q2-Yuchen-Wang">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_oSHFkMKZEei44o2rUuH4Hg" elementId="project-2018-0927-q2-yuchen-wang.handledmenuitem.export" label="Export" command="_z0MosMKZEei44o2rUuH4Hg"/>
+      </children>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
