@@ -4,16 +4,16 @@
    <extension
          point="org.eclipse.core.runtime.products">
       <product
-            name="simpleZestProject2"
+            name="simpletableastexample"
             application="org.eclipse.e4.ui.workbench.swt.E4Application">
          <property
                name="applicationCSS"
-               value="platform:/plugin/simpleZestProject2/css/default.css">
+               value="platform:/plugin/simpleTableAST1Example/css/default.css">
          </property>
       </product>
    </extension>
    <extension
-         id="simpleZestProject2.fragment"
+         id="simpleTableASTExample.fragment"
          point="org.eclipse.e4.workbench.model">
       <fragment
             uri="fragment.e4xmi">
