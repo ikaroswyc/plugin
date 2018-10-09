@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_KpJrAMwNEeiOtdITMFe4zQ">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Ofr3sMwNEeiOtdITMFe4zQ" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_VMK90MwNEeiOtdITMFe4zQ" elementId="project1009-type-ast-rename-cheng.command.refresh" commandName="Refresh"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Q-yXYMwNEeiOtdITMFe4zQ" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="_WhTkwMwNEeiOtdITMFe4zQ" elementId="project1009-type-ast-rename-cheng.handler.0" contributionURI="bundleclass://project1009-type-ast-rename-wang/handler.TableRefreshHandler" command="_VMK90MwNEeiOtdITMFe4zQ"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_Stf78MwNEeiOtdITMFe4zQ" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_cjr98MwNEeiOtdITMFe4zQ" elementId="project1009-type-ast-rename-wang.partdescriptor.simpletableview-renametypeast-1009" label="Simple Table View - Rename Type AST - 1009 wang" iconURI="platform:/plugin/project1009-type-ast-rename-wang/icons/sample.png" contributionURI="bundleclass://project1009-type-ast-rename-wang/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_u50nwMwNEeiOtdITMFe4zQ" elementId="project1009-type-ast-rename-wang.popupmenu.mypopupmenu" label="My Popup Menu">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ymuXUMwNEeiOtdITMFe4zQ" elementId="project1009-type-ast-rename-cheng.handledmenuitem.refresh" label="Refresh" command="_VMK90MwNEeiOtdITMFe4zQ"/>
+      </menus>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
