@@ -152,7 +152,7 @@ public class MyTableViewer {
          String ilastName = p.getLastName();
          // filtered
          if (ilastName.startsWith(String.valueOf(autoActivationChar))) {
-            lastNameList.add(ilastName);
+            lastNameList.add(p.getFirstName() + " " + ilastName);
          }
       }
 
