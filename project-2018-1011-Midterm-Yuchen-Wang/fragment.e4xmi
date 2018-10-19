@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_VhM1sM2ZEei5Fs5tYldrNA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_WI4gwM2ZEei5Fs5tYldrNA" featurename="descriptors" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_jHRCwM2ZEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.partdescriptor.simpletableview20181011midtermyuchenwang" label="Simple Table View 2018 1011 Midterm Yuchen Wang" iconURI="platform:/plugin/project-2018-1011-Midterm-Yuchen-Wang/icons/sample.png" contributionURI="bundleclass://project-2018-1011-Midterm-Yuchen-Wang/view.MyTableViewer">
+      <menus xsi:type="menu:PopupMenu" xmi:id="_rhZ9gM2ZEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.popupmenu.0">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_spuQcM2ZEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.handledmenuitem.save" label="save" command="_1HOBMM2ZEei5Fs5tYldrNA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_tC-d8M2ZEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.handledmenuitem.movedtothetop" label="Moved to the top" command="_18kU0M2ZEei5Fs5tYldrNA"/>
+      </menus>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_WeztcM2ZEei5Fs5tYldrNA" featurename="commands" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Command" xmi:id="_1HOBMM2ZEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.command.savecommand" commandName="Save Command"/>
+    <elements xsi:type="commands:Command" xmi:id="_18kU0M2ZEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.command.movetothetopcommand" commandName="Move to the top Command"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_W2X44M2ZEei5Fs5tYldrNA" featurename="handlers" parentElementId="org.eclipse.e4.legacy.ide.application">
+    <elements xsi:type="commands:Handler" xmi:id="__nBn8M2ZEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.handler.0" contributionURI="bundleclass://project-2018-1011-Midterm-Yuchen-Wang/handler.SaveHandler" command="_1HOBMM2ZEei5Fs5tYldrNA"/>
+    <elements xsi:type="commands:Handler" xmi:id="_ALltkM2aEei5Fs5tYldrNA" elementId="project-2018-1011-midterm-yuchen-wang.handler.1" contributionURI="bundleclass://project-2018-1011-Midterm-Yuchen-Wang/handler.MovetoTopHandler" command="_18kU0M2ZEei5Fs5tYldrNA"/>
+  </fragments>
+</fragment:ModelFragments>
