@@ -89,40 +89,40 @@ public class MoveMethodAnalyzer {
          CompilationUnit compUnit = parse(iCUnit);
 
          // TODO: Term Project
-         /*
-         ASTVisitor * Your Answer * = new * Your Answer *() {
-            public boolean visit(* Your Answer * typeDecl) {
+         
+         ASTVisitor visitor = new ASTVisitor() {
+            public boolean visit(TypeDeclaration typeDecl) {
                if (checkDst(typeDecl)) {
-                  * Your Answer * = (IType) typeDecl.resolveBinding().getJavaElement();
+            	  typeMoveDest = (IType) typeDecl.resolveBinding().getJavaElement();
                   iCUnitMoveDest = iCUnit;
                }
                return true;
             }
 
-            private boolean checkDst(* Your Answer * typeDecl) {
+            private boolean checkDst(TypeDeclaration typeDecl) {
                String classSrc = methodToBeMoved.getPkgName() + "." + methodToBeMoved.getClassName();
                String classDst = classMoveDestination.getPkgName() + "." + classMoveDestination.getName();
                String classCur = typeDecl.resolveBinding().getPackage().getName() + "." + typeDecl.getName().getFullyQualifiedName();
                return classCur.equals(classSrc) == false && classCur.equals(classDst);
             }
 
-            public boolean visit(* Your Answer * methodDecl) {
+            public boolean visit(MethodDeclaration methodDecl) {
                if (eqSrc(methodDecl)) {
-                  * Your Answer * = (IMethod) methodDecl.resolveBinding().getJavaElement();
+            	   methodElemToBeMoved = (IMethod) methodDecl.resolveBinding().getJavaElement();
                   iCUnitToBeMovedMethod = iCUnit;
                }
                return true;
             }
 
-            private boolean eqSrc(* Your Answer * methodDecl) {
+            private boolean eqSrc(MethodDeclaration methodDecl) {
                ITypeBinding curClass = methodDecl.resolveBinding().getDeclaringClass();
                String cur = curClass.getPackage().getName() + "." + curClass.getName() + "." + methodDecl.getName();
                String src = methodToBeMoved.getPkgName() + "." + methodToBeMoved.getClassName() + "." + methodToBeMoved.getName();
                return cur.equals(src);
             }
          };
-         * Your Answer *.accept(* Your Answer *); */
-      }
+         compUnit.accept(visitor);
+         }
    }
 
    private static CompilationUnit parse(ICompilationUnit unit) {
@@ -142,15 +142,16 @@ public class MoveMethodAnalyzer {
    }
 
    public void moveMethod() {
-      /* TODO: Term Project
+//      TODO: Term Project
+      
       if (this.methodToBeMoved.getNodeType().equals(GNodeType.UserSelection) && //
             this.classMoveDestination.getNodeType().equals(GNodeType.UserDoubleClicked)) {
          System.out.println("-> " + this.methodElemToBeMoved.getPath() + "." + this.methodElemToBeMoved.getElementName());
          System.out.println("-> " + this.typeMoveDest.getFullyQualifiedName());
          try {
          
-            See https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjdt%2Fcore%2FIMethod.html
-            methodElemToBeMoved.move(* Your Answer *, null, null, false, null);
+            //See https://help.eclipse.org/oxygen/index.jsp?topic=%2Forg.eclipse.jdt.doc.isv%2Freference%2Fapi%2Forg%2Feclipse%2Fjdt%2Fcore%2FIMethod.html
+            methodElemToBeMoved.move(typeMoveDest, null, null, false, null);
             
             UtilPlatform.indentAndSave(iCUnitToBeMovedMethod);
             UtilPlatform.indentAndSave(iCUnitMoveDest);
@@ -159,7 +160,7 @@ public class MoveMethodAnalyzer {
          }
       } else {
          System.out.println("[DBG] Please select class and method nodes to move.");
-      } */
-      UtilMsg.openWarning("TODO: should implement it as a part of the term project.");
+      } 
+      //UtilMsg.openWarning("TODO: should implement it as a part of the term project.");
    }
 }
